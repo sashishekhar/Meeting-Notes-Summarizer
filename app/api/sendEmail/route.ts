@@ -16,11 +16,11 @@ export async function POST(req: Request) {
 
     // Send email
     const data = await resend.emails.send({
-      from: "Summariser <onboarding@resend.dev>", // use a verified sender
+      from: "Summariser <onboarding@resend.dev>", 
       to,
       subject: subject || "Meeting Summary",
       text,
-      html: `<p>${text.replace(/\n/g, "<br>")}</p>`, // optional: HTML version
+      html: `<p>${text.replace(/\n/g, "<br>")}</p>`, 
     });
 
     return new Response(JSON.stringify({ success: true, data }), { status: 200 });

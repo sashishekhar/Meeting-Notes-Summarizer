@@ -44,7 +44,7 @@ body {
   background-color: #737373; /* neutral-500 */
 }
 
-/* Works for Firefox */
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #525252 #262626;

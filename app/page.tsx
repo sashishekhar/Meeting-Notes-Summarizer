@@ -135,7 +135,7 @@ export default function Home() {
           summarise and share your meetings notes.
         </h1>
 
-        {/* Upload + Prompt */}
+       
         <form
           onSubmit={handleSubmit}
           className="flex items-center bg-neutral-800 rounded-full px-4 py-2 shadow-md space-x-2"
@@ -187,7 +187,7 @@ export default function Home() {
           </button>
         </form>
 
-        {/* Summary */}
+        
         <div className="rounded-xl shadow-md overflow-hidden">
           <div className="bg-neutral-800 h-[400px] overflow-y-auto p-6 text-left">
             {loading ? (
@@ -269,8 +269,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Share Modal */}
-      {/* Share Modal */}
+      
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
           <div className="bg-neutral-900 rounded-2xl p-6 w-96 shadow-xl border border-neutral-700">

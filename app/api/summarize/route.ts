@@ -24,8 +24,8 @@ export async function POST(req: Request) {
 
     const data = await response.json();
 
-    // Debug log (to see what Gemini returns)
-    console.log("Gemini API response:", JSON.stringify(data, null, 2));
+    
+    
 
     // Extract summary safely
     const summary =
